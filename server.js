@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(morgan("dev"));
 
-app.use("/api", trackerRouter);
+app.use("/api/users", trackerRouter);
 
 app.use(notFound);
 app.use(errorHandler);
